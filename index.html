@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7b211d">
+<title>长征胜利90周年｜走过历史，走向未来</title>
+<style>
+:root{--red:#7b211d;--red2:#a43b2d;--gold:#d9b477;--cream:#f5f0e7;--ink:#292622;--muted:#71685e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.85}
+a{color:inherit;text-decoration:none}.nav{position:absolute;z-index:5;left:0;top:0;width:100%;display:flex;align-items:center;justify-content:space-between;padding:22px clamp(22px,7vw,100px);color:#fff;border-bottom:1px solid #ffffff30}.brand{font-weight:800;letter-spacing:.12em;font-size:15px}.brand small{display:block;font-size:9px;letter-spacing:.2em;opacity:.72}.links{display:flex;gap:28px;font-size:13px}.links a{opacity:.85}.links a:hover{color:var(--gold)}
+.hero{min-height:690px;height:92vh;max-height:960px;display:flex;align-items:center;position:relative;overflow:hidden;color:white;background:linear-gradient(105deg,#241413 0%,#59201c 47%,#9c402b 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1d1111dd 0%,#38171699 54%,#35171420 100%),repeating-linear-gradient(120deg,transparent 0 65px,#ffffff08 66px 67px)}
+.sun{position:absolute;width:min(43vw,520px);aspect-ratio:1;right:10%;top:18%;border-radius:50%;background:radial-gradient(circle,#f0d5a0 0 25%,#dca46c 26% 43%,#a94c36 44% 46%,transparent 47%);opacity:.8}
+.mountains{position:absolute;bottom:-1px;width:100%;height:43%;left:0}
+.hero-copy{position:relative;z-index:2;margin-left:clamp(24px,10vw,150px);padding:100px 24px 50px;max-width:800px}
+.eyebrow{font-size:12px;letter-spacing:.25em;color:var(--gold);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:32px;height:1px;background:currentColor}
+h1{font-family:"STSong","Songti SC",serif;font-size:clamp(43px,7.4vw,88px);line-height:1.2;letter-spacing:.07em;margin:25px 0 16px}h1 span{display:block;font-size:.44em;letter-spacing:.17em;color:var(--gold);margin-top:15px}.hero-copy p{max-width:560px;color:#f0e3d6;font-size:16px}.hero-meta{margin-top:35px;color:#e6cba3;font-size:12px;letter-spacing:.16em}.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.25em;color:#e8d5bd;opacity:.75}
+section{padding:100px clamp(24px,10vw,145px)}.section-top{max-width:760px;margin-bottom:40px}.section-top .eyebrow{color:var(--red2)}h2{font-family:"STSong","Songti SC",serif;font-size:clamp(30px,4.5vw,50px);line-height:1.35;color:var(--red);font-weight:600;margin:12px 0 20px}.lead{font-size:17px;color:#51483e}.body-copy{color:#6a6055;font-size:15px}
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.story-art{min-height:420px;position:relative;overflow:hidden;background:linear-gradient(150deg,#9c3929,#481b19);color:#f4dfba;padding:36px;display:flex;flex-direction:column;justify-content:space-between}.story-art:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #e9c68b55;border-radius:50%;right:-80px;top:45px;box-shadow:0 0 0 22px #e9c68b0b,0 0 0 54px #e9c68b0b}.story-art:after{content:"";position:absolute;left:-10%;right:-10%;bottom:-1px;height:47%;background:#2b1716;clip-path:polygon(0 75%,18% 30%,35% 65%,52% 8%,70% 68%,85% 34%,100% 60%,100% 100%,0 100%)}.art-label,.art-year{position:relative;z-index:1}.art-label{font-size:11px;letter-spacing:.2em}.art-year{font-family:Georgia,serif;font-size:clamp(42px,5vw,66px);line-height:1}.art-year small{display:block;font-family:inherit;font-size:14px;letter-spacing:.2em;margin-top:12px;color:#f1d9b3}
+.story-text p{margin:0 0 18px}.rule{height:1px;background:#cfc0aa;margin:25px 0}.keyline{display:flex;gap:18px;align-items:flex-start;margin-top:18px}.keyline strong{font-family:Georgia,serif;font-size:25px;color:var(--red);min-width:82px}.keyline span{font-size:14px;color:var(--muted)}
+.milestones{background:#e9dfcf}.milestone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.milestone{border-top:2px solid var(--red);padding-top:20px}.milestone time{font-family:Georgia,serif;font-size:25px;color:var(--red)}.milestone h3{font-family:"STSong","Songti SC",serif;font-size:21px;margin:9px 0}.milestone p{font-size:14px;color:var(--muted);margin:0}
+.spirit{background:#321817;color:#fff}.spirit h2{color:#f2dfc2}.spirit .section-top p{color:#d5c4b5}.spirit .eyebrow{color:var(--gold)}.spirit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff28;border:1px solid #ffffff28}.spirit-card{padding:27px 25px;background:#321817;min-height:190px}.spirit-card .num{color:var(--gold);font-family:Georgia,serif;font-size:13px;letter-spacing:.12em}.spirit-card h3{font-family:"STSong","Songti SC",serif;font-size:22px;margin:12px 0 8px}.spirit-card p{color:#d2c2b5;font-size:13px;margin:0}
+.closing{text-align:center;padding-top:110px;padding-bottom:110px}.closing .eyebrow{justify-content:center;color:var(--red2)}.closing h2{font-size:clamp(32px,5vw,58px);margin:20px auto}.closing p{max-width:720px;margin:0 auto;color:#6c6156;font-size:15px}.closing .motto{margin-top:32px;color:var(--red);font-size:12px;letter-spacing:.22em}
+footer{background:#201312;color:#c8b6a5;padding:27px clamp(24px,8vw,120px);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px}footer b{color:var(--gold);font-weight:600}
+@media(max-width:760px){.links{gap:14px}.links a:nth-child(2){display:none}.hero{min-height:640px;height:88vh}.sun{width:70vw;right:-12%;top:20%}.story{grid-template-columns:1fr;gap:28px}.story-art{min-height:300px}.milestone-grid{grid-template-columns:1fr;gap:26px}.spirit-grid{grid-template-columns:1fr}.spirit-card{min-height:0}.scroll{display:none}section{padding-top:72px;padding-bottom:72px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#home">长征胜利90周年<small>REMEMBER HISTORY · LOOK TO THE FUTURE</small></a>
+<nav class="links" aria-label="页面导航"><a href="#intro">长征简介</a><a href="#history">历史足迹</a><a href="#spirit">精神传承</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="sun" aria-hidden="true"></div>
+<svg class="mountains" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+<path d="M0 260 155 150 280 238 440 70 600 245 770 112 920 255 1080 80 1230 230 1360 140 1440 205V420H0Z" fill="#5b211d"/>
+<path d="M0 330 185 245 350 310 525 190 690 322 865 210 1035 320 1220 218 1440 310V420H0Z" fill="#301817"/>
+<path d="M0 370 220 320 430 360 650 290 860 370 1080 308 1270 355 1440 320V420H0Z" fill="#1d1212"/>
+</svg>
+<div class="hero-copy">
+<div class="eyebrow">1936 — 2026 · 纪念红军长征胜利90周年</div>
+<h1>走过历史<span>走向更加辽阔的未来</span></h1>
+<p>九十载岁月流转，长征留下的记忆依然深沉。重温这段艰苦卓绝的历史，回望理想与信念的力量，在历史中理解今天，在传承中走向未来。</p>
+<div class="hero-meta">铭记历史　·　缅怀先辈　·　传承精神</div>
+</div>
+<div class="scroll">向下探索　↓</div>
+</section>
+<section id="intro">
+<div class="story">
+<div class="story-art"><div class="art-label">THE LONG MARCH · 1934—1936</div><div class="art-year">90 YEARS<small>长征胜利九十周年</small></div></div>
+<div class="story-text">
+<div class="section-top"><div class="eyebrow">01 / ABOUT THE LONG MARCH</div><h2>一段改变历史进程的远征</h2></div>
+<p class="lead">长征，是中国革命历史上的伟大壮举，也是一段在艰难险阻中寻找出路、坚定前行的历史征程。</p>
+<p class="body-copy">1934年10月，中央红军开始战略转移。此后，红军将士跨越山川河流，克服重重困难，在复杂严峻的环境中不断探索前进道路。1936年10月，红军三大主力会师，长征胜利结束。</p>
+<p class="body-copy">长征的意义不仅在于行程的抵达，更在于它所展现的信念、勇气与团结。它成为中国革命历史中重要的精神坐标，也为后人留下了值得持续思考的历史经验。</p>
+<div class="rule"></div>
+<div class="keyline"><strong>1934</strong><span>中央红军开始战略转移，踏上艰苦卓绝的征程。</span></div>
+<div class="keyline"><strong>1935</strong><span>遵义会议成为中国革命的重要历史转折。</span></div>
+<div class="keyline"><strong>1936</strong><span>红军三大主力会师，长征胜利结束。</span></div>
+</div>
+</div>
+</section>
+<section class="milestones" id="history">
+<div class="section-top"><div class="eyebrow">02 / HISTORICAL FOOTPRINTS</div><h2>沿着时间，回望征程</h2><p class="body-copy">从战略转移到胜利会师，长征的每一步都记录着艰苦奋斗与不断探索。</p></div>
+<div class="milestone-grid">
+<article class="milestone"><time>1934.10</time><h3>踏上征程</h3><p>中央红军离开中央革命根据地，开始战略转移。</p></article>
+<article class="milestone"><time>1935.01</time><h3>遵义会议</h3><p>会议推动中国革命在危急关头实现重要转折。</p></article>
+<article class="milestone"><time>1936.10</time><h3>胜利会师</h3><p>红军三大主力会师，长征胜利结束，革命力量开启新的历史阶段。</p></article>
+</div>
+</section>
+<section class="spirit" id="spirit">
+<div class="section-top"><div class="eyebrow">03 / THE SPIRIT LIVES ON</div><h2>历史的回响，时代的力量</h2><p>长征精神在历史中形成，也在一代代人的实践中不断获得新的理解。</p></div>
+<div class="spirit-grid">
+<article class="spirit-card"><div class="num">01 — 信念</div><h3>理想坚定</h3><p>在艰难处境中仍然明确方向，以坚定信念支撑前行。</p></article>
+<article class="spirit-card"><div class="num">02 — 求实</div><h3>实事求是</h3><p>尊重实际、独立思考，在实践中寻找解决问题的办法。</p></article>
+<article class="spirit-card"><div class="num">03 — 勇气</div><h3>不惧艰险</h3><p>面对困难不轻易退缩，在一次次挑战中积累力量。</p></article>
+<article class="spirit-card"><div class="num">04 — 团结</div><h3>同心同行</h3><p>在共同目标下凝聚力量，理解协作与相互支持的价值。</p></article>
+<article class="spirit-card"><div class="num">05 — 奋斗</div><h3>脚踏实地</h3><p>把目标落实为一步步行动，以持续努力回应时代课题。</p></article>
+<article class="spirit-card"><div class="num">06 — 传承</div><h3>接续前行</h3><p>铭记历史、珍惜当下，把精神力量转化为成长与担当。</p></article>
+</div>
+</section>
+<section class="closing">
+<div class="eyebrow">90TH ANNIVERSARY · 1936—2026</div>
+<h2>山河为证，初心如磐</h2>
+<p>纪念长征胜利九十周年，是一次对历史的回望，也是一次面向未来的思考。铭记先辈走过的道路，珍惜今天来之不易的生活，把理想融入学习与实践，以坚定、求实、奋斗的姿态走好属于自己的每一步。</p>
+<div class="motto">铭记历史 · 珍惜当下 · 走向未来</div>
+</section>
+</main>
+<footer><div><b>纪念长征胜利90周年</b>　思政主题简介</div><div>历史回望　/　精神传承　/　时代同行</div><div>用于学习展示 · 建议结合课程资料核对史实表述</div></footer>
+</body>
+</html>
